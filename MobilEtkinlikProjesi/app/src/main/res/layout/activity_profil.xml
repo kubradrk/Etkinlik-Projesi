@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constrainarkaplan"
+    tools:context=".ProfilActivity">
+
+    <!-- Profil Güncelleme Butonu -->
+    <Button
+        android:id="@+id/ProfilGuncelle"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Bilgilerimi Güncelle"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/profilCikis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilEmail" />
+
+    <!-- Profil Email Text -->
+    <TextView
+        android:id="@+id/profilEmail"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="E-mail adresiniz:"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ProfilGuncelle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilAdSoyad" />
+
+    <!-- Profil Ad Soyad Text -->
+    <TextView
+        android:id="@+id/profilAdSoyad"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Adınız ve Soyadınız:"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/profilEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilText" />
+
+    <!-- Profil Bilgileriniz Text -->
+    <TextView
+        android:id="@+id/profilText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Profil Bilgileriniz:"
+        android:textColor="@color/textColor"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Üye Kullanıcı Sözleşmesi Text -->
+    <TextView
+        android:id="@+id/profiluyekullanıcıSozlesmesi"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Üye olarak veya giriş yaparak kullanım ve gizlilik koşullarını kabul etmiş sayılırsınız"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilSil" />
+
+    <!-- Hesabımı Sil Butonu -->
+    <Button
+        android:id="@+id/profilSil"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Hesabımı Sil"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/profiluyekullanıcıSozlesmesi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilCikis" />
+
+    <!-- Çıkış Yap Butonu -->
+    <Button
+        android:id="@+id/profilCikis"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buttonarkaplan"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Çıkış Yap"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/profilSil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfilGuncelle" />
+
+
+    <!-- Bildirim Almak İstiyorum Switch -->
+    <Switch
+        android:id="@+id/profilBildirimSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bildirim Almak İstiyorum"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/profilSil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Alt Bar -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/constrainarkaplanters"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <!-- Buton 1 -->
+    <ImageButton
+        android:id="@+id/mainMapButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Harita"
+        android:src="@drawable/location" />
+
+    <!-- Buton 2 -->
+    <ImageButton
+        android:id="@+id/mainProfilButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Profil"
+        android:src="@drawable/profil" />
+
+    <!-- Buton 3 -->
+    <ImageButton
+        android:id="@+id/mainFavoriButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Favorilere"
+        android:src="@drawable/favori" />
+
+    <!-- Buton 4 -->
+    <ImageButton
+        android:id="@+id/mainBildirimButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Bildirimleri göster"
+        android:src="@drawable/bildirim" />
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

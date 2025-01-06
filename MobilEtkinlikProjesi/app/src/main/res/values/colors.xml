@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="textColor">#FFFFFFFF</color>
+    <color name="buttonColor">#191E30</color>
+    <color name="endColor">#191E30</color>
+    <color name="startColor">#FF9800</color>
+    <color name="CenterColor">#73562C</color>
+
+</resources>

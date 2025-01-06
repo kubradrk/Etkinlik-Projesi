@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "989453333742",
+    "firebase_url": "https://etkinlikuygulamasi-56698-default-rtdb.firebaseio.com",
+    "project_id": "etkinlikuygulamasi-56698",
+    "storage_bucket": "etkinlikuygulamasi-56698.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989453333742:android:ed589beff00d1e8896afff",
+        "android_client_info": {
+          "package_name": "com.kubradurak.mobiletkinlikprojesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989453333742-7iqe9ee2d19idheiredpe9muibqqkjoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kubradurak.mobiletkinlikprojesi",
+            "certificate_hash": "ce6a6e9ce8e9b1d9b775d855eb3da7a6085c228d"
+          }
+        },
+        {
+          "client_id": "989453333742-865jtvfqn772vfiik2o6ocofajbi1gta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPcKXDQECuLbogHGKzU37SBZ4tKGUB1C0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989453333742-865jtvfqn772vfiik2o6ocofajbi1gta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
